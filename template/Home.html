@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURE CONNECT / HOME</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+</head>
+<body>
+    <div class="outerheader">
+        
+        <div class="icon"> 
+            <span class="i"></span>
+            <h1>  CURE CONNECT</h1>
+        </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a class="active"  href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a> </li>
+                    <li><a href="{% url 'logout' %}">Logout</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="firstcontent">
+        <div class="secondcontent">
+            <h2>PRECISION CARE,</h2>
+            <h2>PERSONALIZED SEARCH,</h2>
+            <h2>YOUR HOSPITAL,</h2>
+            <h2>JOURNEY STARTS HERE.</h2>
+            <h3>CURE CONNECT : Your Route To Relable Healthcare.</h3>
+            <a href="{% url 'patient' %}">
+            <button>Click Here</button> 
+        </a>
+        </div>
+    </div>
+
+    <div class="features">
+        <h1 id="a">FEATURED FACILITIES <br>
+         Dedicated To Provide Best Facilities </h1>
+
+        <div class="featurescontent">
+            <div class="outerfeature">
+                <div class="Thirdfeature"></div>
+                <h2>Find a Hospital</h2>
+                <a href="{% url 'dash' %}">
+                    <button>Click Here</button> 
+                </a>
+                </div>
+            <div class="outerfeature">
+            <div class="firstfeature"></div>
+            <h2>Book An Appointments</h2>
+            <a href="{% url 'dash1' %}">
+                <button>Click Here</button> 
+            </a>
+            </div>
+
+
+        <div class="outerfeature">
+            <div class="fourthfeature"></div>
+            <h2>Emergency Services</h2>
+            <a href="{% url 'emergency' %}">
+                <button>Click Here</button> 
+            </a>
+        </div>
+        <div class="outerfeature">
+            <div class="secondfeature"></div>
+            <h2>Reviews</h2>
+            <a href="{% url 'review' %}">
+                <button>Click Here</button> 
+            </a>
+        </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Aboutus.css' %}">
+</head>
+<body>
+    <div class="outerheader">
+        <div class="icon"> 
+            <span class="i"></span>
+            <h1> CURE CONNECT</h1>
+        </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a class="active" href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="header1">
+        <!-- <h2>ABOUT US </h2> -->
+    </div>
+    <main>
+        <section class="about-section">
+            <h2>ABOUT US</h2>
+            <p>Cure Connect is a healthcare platform committed to transforming the accessibility and delivery of medical services. Our mission revolves around creating a seamless and user-friendly experience for individuals seeking healthcare solutions.</p>
+            <p>We strive to bridge the gap between patients and healthcare providers by offering a comprehensive range of services. Whether it's finding the right hospital, scheduling appointments with preferred doctors, managing medical records securely, or accessing emergency services, Cure Connect streamlines the entire healthcare journey.</p>
+            <p>At Cure Connect, our primary focus is the well-being of our users. We prioritize privacy, security, and convenience throughout their healthcare experiences. We adhere to the highest standards of data security to ensure the confidentiality of personal health information.</p>
+            <p>Our team consists of dedicated professionals from diverse backgrounds in healthcare and technology, all driven by the common goal of revolutionizing the healthcare industry. We believe that every individual deserves accessible and high-quality healthcare, and Cure Connect is committed to making that a reality.</p>
+        </section>
+    </main>
+
+    <div class="team">
+        <h1>OUR TEAM</h1>
+    </div>
+    
+    <div class="Outercontact">
+        <div class="Aboutus1">
+          
+            <h1>P K Harita</h1>  
+            <p>reddyharita2002@gmail.com </p>
+            <p>9353679068</p>
+        </div>
+
+        <div class="Aboutus1">
+            <h1>S Hitesh</h1>
+            <p>7hitesh9802@gmail.com</p>
+            <p>8252844715
+            </p>
+        </div>
+            
+        <div class="Aboutus1">
+            <h1>Granthika Dhanuka
+            </h1>
+            <p>granthika.dhanuka@gmail.com</p>
+            <p>8486242593
+            </p>
+        </div>
+        <div class="Aboutus1">
+            <h1>Kirthi Kumar S</h1>
+            <p>kirthikumar410@gmail.com</p>
+            <p>8073609606
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

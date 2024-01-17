@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+
+}
+Body h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    /* width: 100%; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    /* background-color: aliceblue; */
+}
+
+.header{
+    margin-top: -40Px;
+    /* width: 100%; */
+    height: 40px;
+    padding-top: 5px;
+}
+.outerheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8f7ff;
+    padding-top: 20px;
+    padding-bottom: -20px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.i{
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    /* background-color: #d62727; */
+    align-items: center;
+    background-image: url(icon.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    margin: 0px;
+    padding: 0px;
+    height: 180px;
+    background-image: url(Hospital.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: #c8f7ff;
+    margin: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 20px;
+}
+
+/* nav a:hover {
+    color: rgb(0, 179, 255);
+    font-size: 25px;
+    transition: 0.5s;
+} */
+.header  ul li a.active,
+.header  ul li a:hover{
+    padding: 5px;
+	background: rgba(0, 229, 255, 0.574);
+    color: #fff;
+
+	border-radius: 2px;
+    font-size: 20px;
+    transition: ease-out 0.5s;
+}
+
+
+
+.content {
+    margin: 20px;
+    padding: 20px;
+    /* border: 2px solid #ccc; */
+    color: #555555;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#rev{
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+h1 {
+
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+/* Styles for review cards and container */
+/* Styles for review cards and container */
+.arrow-container {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#scrollLeft,
+#scrollRight {
+    border: none;
+    border: solid rgb(39, 41, 41) 1px;
+    border-radius: 50%  ;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.review-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.review-card {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.star-ratings {
+    font-size: 24px;
+    color: coral;
+}
+
+.review-content {
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: justify;
+}

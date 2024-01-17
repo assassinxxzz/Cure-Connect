@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url(Login\ image1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 1px;
+    background-color: #00b7ff;
+}
+
+.main-heading h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+    background-image: url(Login.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-container {
+    /* margin-top: 150px; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff68;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 500px;
+    height: 450px;
+    text-align: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+/* .wrapper:hover{
+    background-color: #dcdcdc8f;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    transition: ease-in-out 0.5s;
+} */
+.login-container h1{
+    text-decoration: underline;
+}
+
+.inner-div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    padding-top: 20px;
+}
+.input-group {
+    padding: 10px;
+    height: 40px;
+    /* margin-bottom: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 150px;
+    text-align: left;
+}
+
+input {
+    height: 25px;
+    width: 200px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+
+button {
+    align-self: center;
+    width: 180px;
+    margin-top: 20px;
+    font-weight: 500;
+    background-color: #43b4ff;
+    color: #383838;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #0099ff;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+    /* background-color: #dcdcdc8f; */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.5s;
+}
+p{
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #006485;
+    transition: ease-in-out 0.5s;
+}

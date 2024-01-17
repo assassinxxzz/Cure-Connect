@@ -1,0 +1,186 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+
+}
+Body h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    /* width: 100%; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    /* background-color: aliceblue; */
+}
+
+  .header{
+    margin-top: -40Px;
+    /* width: 100%; */
+    height: 40px;
+    padding-top: 5px;
+}
+.outerheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8f7ff;
+    padding-top: 20px;
+    padding-bottom: -20px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.i{
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    /* background-color: #d62727; */
+    align-items: center;
+    background-image: url(icon.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    margin: 0px;
+    padding: 0px;
+    height: 680px;
+    background-image: url(Hospital.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: #c8f7ff;
+    margin: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 20px;
+}
+
+/* nav a:hover {
+    color: rgb(0, 179, 255);
+    font-size: 25px;
+    transition: 0.5s;
+} */
+.header  ul li a.active,
+.header  ul li a:hover{
+    padding: 5px;
+	background: rgba(0, 229, 255, 0.574);
+    color: #fff;
+
+	border-radius: 2px;
+    font-size: 20px;
+    transition: ease-out 0.5s;
+}
+.outercontent{
+    height: 90vh;
+    width: 100%;
+    background-image: url(emergency.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ambulance-container {
+    position: absolute;
+    top: 26%;
+    left: -200px;
+    width: 200px;
+    height: 100px;
+    animation: moveAmbulance 3s linear infinite;
+}
+.emergency-services ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ambulance {
+    width: 100%;
+    height: 100%;
+    /* background-color: #f00; */
+    background-image: url(am1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+}
+
+.emergency-services {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.402);
+    padding: 50px;
+    backdrop-filter: blur(5px);
+}
+
+/* @keyframes moveAmbulance {
+    0% {
+        transform: translateX(730%);
+    }
+    100% {
+        transform: translateX(330%);
+    }
+} */
+@keyframes moveAmbulance {
+    0% {
+        transform: translateX(330%);
+    }
+    100% {
+        transform: translateX(730%);
+    }
+}
+.emergency-services h1{
+    font-weight: 900;
+    font-size: 70px;
+}
+.emergency-services p{
+    font-size: 20px;
+}
+.emergency-services strong{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+li{
+    font-size: 25px;
+
+}
+hr{
+   margin-top: 30px;
+    color: #fff;
+}

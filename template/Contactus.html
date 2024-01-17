@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Contactus.css' %}">
+</head>
+<body>
+    <div class="outerheader">
+        <div class="icon"> 
+            <span class="i"></span>
+            <h1> CURE CONNECT</h1>
+        </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a class="active" href="{% url 'contactus' %}">Contact Us</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>CONTACT US</h2>
+        <p>If you have any queries or need assistance, feel free to reach out to us:</p>
+        <div class="contact-details">
+            <div class="contact-info">
+                <h3>Email</h3>
+                <p>cureconnect@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <h3>Phone</h3>
+                <p>9988776655</p>
+            </div>
+            <div class="contact-info">
+                <h3>Address</h3>
+                <p>Bengaluru, Karnataka, INDIA</p>
+            </div>
+        </div>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+        <div class="feedback">
+            <h3> Enter Your Message</h3>
+                <div class="text">
+                <label for="name">  Name: </label> 
+                <input type="text" id="username" name="username" required placeholder="Username">
+            </div>
+                <label for="Email"> Email: </label> 
+                <input type="email" id="email" name="email" required placeholder="Email">
+            </div>
+                <label>Message: </label>
+                <textarea class="Box" name="add" class="textarea" required placeholder="Please Enter The Feedback"></textarea>
+                <div class="btn">
+                <button type="submit">Submit </button> 
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

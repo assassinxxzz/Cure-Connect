@@ -1,0 +1,235 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f4f4f4; */
+	
+}
+Body h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    /* width: 100%; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    /* background-color: aliceblue; */
+}
+
+.header{
+	margin-top: -40Px;
+    /* width: 100%; */
+    height: 40px;
+    padding-top: 5px;
+}
+.outerheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8f7ff;
+    padding-top: 20px;
+    padding-bottom: -20px;
+}
+.icon{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.i{
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    /* background-color: #d62727; */
+    align-items: center;
+    background-image: url(fe.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    margin: 0px;
+    padding: 0px;
+    height: 680px;
+    background-image: url(.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+	background-color: #c8f7ff;
+    margin: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+	display: inline-block;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 20px;
+}
+.header  ul li a.active,
+.header  ul li a:hover{
+	padding: 5px;
+	background: rgba(0, 229, 255, 0.574);
+    color: #fff;
+
+	border-radius: 2px;
+    font-size: 20px;
+    transition: ease-out 0.5s;
+}
+.main{
+	height: 80vh;
+	background-image: url(fe.jpg);
+	background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover; 	
+}
+.container{
+	
+	position: relative;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(15px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(Contactbg.jpg) no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	
+	max-width: 850px;
+	display: grid;
+	/* grid-template-columns: repeat(2, 1fr); */
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #ffffff96;
+	backdrop-filter: blur(15px);
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.19);
+}
+
+/* .left{
+	background: url(feedback.jpg) no-repeat center;
+    background-position: center;
+	background-size: cover;
+	height: 100%;
+} */
+
+/* Your existing CSS styles here */
+
+/* Updated styles for the contact form */
+.right {
+    padding: 25px 40px;
+    animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: #2ecc71;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 150px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+    transition: width 0.3s ease;
+}
+
+.field,
+textarea,
+.btn {
+    width: calc(100% - 2rem);
+    border: none;
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Quicksand', sans-serif;
+	color: #10f668; 
+}
+
+.field:hover,
+textarea:hover,
+.btn:hover {
+    background-color: rgba(253, 247, 247, 0.1);
+}
+
+.field:focus,
+textarea:focus,
+.btn:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+textarea {
+    min-height: 150px;
+    resize: none;
+	
+}
+
+.btn {
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Services.css' %}">
+</head>
+<body>
+    <div class="outerheader">
+        
+        <div class="icon"> 
+            <span class="i"></span>
+            <h1>  CURE CONNECT</h1>
+        </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                    <li><a class="active" href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a> </li>
+                    <li><a href="{% url 'logout' %}">Logout</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header1">
+        <h2>SERVICES</h2>
+    </div>
+
+        <div class="service-section">
+            <div class="service">
+                <h2>Find a Hospital</h2> 
+                <ul>
+                    <li>Locate nearby hospitals, clinics, and medical facilities.</li>
+                    <li>Access detailed information about services offered by healthcare facilities.</li>
+                    <li>Find contact details and addresses of hospitals based on your location.</li>
+                    <li>Filter searches based on specializations, ratings, and distance.</li>
+                </ul>
+            </div>
+    
+            <div class="service">
+                <h2>Book an Appointment</h2>
+                <ul>
+                    <li>Effortlessly schedule appointments with preferred healthcare providers.</li>
+                    <li>Select convenient dates for consultations or treatments.</li>
+                    <li>Receive instant confirmation and reminders for scheduled appointments.</li>
+                    <li>Customize searches based on doctor availability, specialization, or location.</li>
+                </ul>
+            </div>
+    
+            <div class="service">
+                <h2>Medical Records</h2>
+                <ul>
+                    <li>Access and manage comprehensive medical records securely online.</li>
+                    <li>Store test results, prescriptions, and health history for easy reference.</li>
+                    <li>Share medical records securely with healthcare professionals as needed.</li>
+                    <li>Enable better-informed consultations and treatments for improved care.</li>
+                </ul>
+            </div>
+    
+            <div class="service">
+                <h2>Emergency Services</h2>
+                <ul>
+                    <li>Instantly access emergency contact information for medical assistance.</li>
+                    <li>Find the nearest emergency departments or urgent care facilities.</li>
+                    <li>Get real-time information for immediate medical attention during crises.</li>
+                    <li>Receive guidance and directions to the closest healthcare facilities.</li>
+                </ul>
+            </div>
+        </div>
+
+</body>
+</html>

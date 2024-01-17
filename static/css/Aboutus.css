@@ -1,0 +1,191 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+Body h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    /* width: 100%; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    /* background-color: aliceblue; */
+}
+
+.header{
+    margin-top: -40Px;
+    /* width: 100%; */
+    height: 40px;
+    padding-top: 5px;
+}
+.outerheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8f7ff;
+    padding-top: 20px;
+    padding-bottom: -20px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.i{
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    /* background-color: #d62727; */
+    align-items: center;
+    background-image: url(icon.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    margin: 0px;
+    padding: 0px;
+    height: 680px;
+    background-image: url(Hospital.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: #c8f7ff;
+    margin: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 20px;
+}
+
+/* nav a:hover {
+    color: rgb(0, 179, 255);
+    font-size: 25px;
+    transition: 0.5s;
+} */
+.header  ul li a.active,
+.header  ul li a:hover{
+    padding: 5px;
+	background: rgba(0, 229, 255, 0.574);
+    color: #fff;
+
+	border-radius: 2px;
+    font-size: 20px;
+    transition: ease-out 0.5s;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.about-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+.about-section p {
+    text-align: justify;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Additional styling for About Us content */
+.About1 {
+    margin-top: 50px;
+    width: 80%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f8ff; /* Alice blue */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.About1 h2 {
+    color: #1e90ff; /* Blue */
+}
+
+/* Styling for team contact details */
+.Outercontact {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: space-around;
+}
+
+.Aboutus1 {
+    height: 180px;
+    width: 300px;
+    padding: 20px;
+    background-color: #f1f1f1; /* Red */
+    border: solid #545050 5px;
+    text-align: center;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+.Aboutus1:hover {
+    background-color: #f0f8ff; /* Alice blue */
+    border: solid #00feed 5px;
+}
+
+.Aboutus1 h1 {
+    margin-top: 40px;
+    background-color: #00b2fe; /* Red */
+    color: #fff;
+    font-size: 24px;
+}
+
+.Aboutus1 p {
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}

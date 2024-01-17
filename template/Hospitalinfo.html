@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/dashs.css' %}">
+</head>
+<body>
+    <div class="outerheader">
+        
+        <div class="icon"> 
+            <span class="i"></span>
+            <h1>  CURE CONNECT</h1>
+        </div>
+        <div class="header">
+            <nav>
+                <ul>
+                  <li><a class="active"  href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a> </li>
+                    <li><a href="{% url 'logout' %}">Logout</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="ambulance-container">
+        <div class="ambulance"></div>
+      </div>
+  <div class="container">
+    <form action="" class="search"  method="get">
+        <input type="text" placeholder="Search for Location " name="searchname">
+        <button type="submit"> <img src="{% static 'css/search.png' %}" alt=""></button>
+    </form>
+</div>
+     <table class="content-table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Hospital Name</th>
+           <th>Doctor Name</th>
+           <th>Specialization</th>
+           <th>Phonenumber</th>
+           <th>Area</th>
+           <th>Location</th>
+           <th>Location Link</th>
+          </tr>
+        </thead>
+        {% for d in dash %}
+        <tbody>
+          <tr>
+            <th>{{forloop.counter}}</th>
+            <td>{{d.hospitalname}}</td>
+            <td>{{d.doctorname}}</td>
+            <td>{{d.specialization}}</td>
+            <td>{{d.phonenumber}}</td>
+            <td id="area">{{d.area}}</td>
+            <td>{{d.location}}</td>
+            <td>
+              {% if d.link %}
+                <a href="{{ d.link }}" target="_blank">Visit Location</a>
+              {% else %}
+                No Link Available
+              {% endif %}
+            </td>
+          </tr>
+          {% empty %}
+          NO Data Found
+          {% endfor %}
+        </tbody>
+      </table>
+</body>
+</html>

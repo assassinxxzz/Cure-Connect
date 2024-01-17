@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-heading">
+            <h1>CURE CONNECT</h1>
+        </div>
+    </header>
+    <div class="wrapper">
+    <div class="login-container">
+        <h1>LOGIN</h1>
+        <form action="" method="POST">
+            <div class="inner-div">
+                {% csrf_token %}
+                <div class="input-group">
+                <label for="username"><i class='fas fa-user-alt'></i> &nbsp;Username:</label>
+                    <input type="text" id="username" name="username" required placeholder="Username">
+                </div>
+                <div class="input-group"> 
+                <label for="password"><i class='fas fa-lock'></i> &nbsp; Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                </div>
+                <button type="submit">Submit </button>
+                <p>Don't have an account? <a href="{% url 'register' %}">Register here</a>.</p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>

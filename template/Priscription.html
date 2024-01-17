@@ -1,0 +1,81 @@
+<!-- appointment_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved Appointments</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Priscription.css' %}">
+        
+</head>
+<body class="loading blurred">
+    <div class="outerheader">
+        <div class="icon"> 
+            <span class="i"></span>
+            <h1> CURE CONNECT</h1>
+        </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a class="active"  href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="maincontainer">
+    <div class="container" class="blurred">
+        <h1>PRESCRIPTION DETAILS</h1>
+        <div class="details">
+            {% if approved_appointments %}
+                <ul>
+                    {% for app in approved_appointments %}
+                        <p>Name : {{ app.name }} </p>
+                        <p>Appointment Date : {{ app.appointmentDate }}</p>
+                        <p>Symptoms : {{ app.symptoms }}</p>
+                    {% endfor %}
+                </ul>
+                <hr>
+                <p>By going through your symptoms, we recommend the following tablets:</p>
+                <ol>
+                    <li>TAB 1 : <span>Paracetamol - 10 </span></li>
+                    <li>TAB 2 : <span>Acetaminophen (Tylenol)  - 10</span></li>
+                    <li>TAB 3 : <span>Antihistamines  - 10</span></li>
+                    <li>TAB 4 : <span>Aspirin - 10</span></li>
+                    <li>TAB 5 : <span>Ibuprofen  - 10</span></li>
+                </ol>
+                <div class="sign">
+                    <div class="img">
+                        <!-- <img src=" " alt=""> -->
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="greet">
+                <h1>Thank You for Trusting Us!</h1>
+                <h2>Your well-being means everything to us, and your prescription has been received with sincere appreciation.</h2>
+                <p>May this treatment pave the way for a swift recovery and a future filled with robust health!</p>
+            </div>
+            
+        {% else %}
+            <p>No approved appointments available.</p>
+        {% endif %}
+    </div>
+</div>
+    <script>
+        // Simulate a 10-second delay for demonstration purposes
+        setTimeout(function() {
+            document.body.classList.remove('loading');
+            document.querySelector('.blurred').classList.remove('blurred');
+            document.querySelector('.loader').style.display = 'none';
+        }, 10000);
+    </script>
+</body>
+</html>

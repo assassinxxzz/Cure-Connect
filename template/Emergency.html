@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Emergency Services in India</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/Emergency.css' %}">
+</head>
+<body>
+
+    <div class="outerheader">
+        
+        <div class="icon"> 
+            <span class="i"></span>
+            <h1>  CURE CONNECT</h1>
+        </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a class="active"  href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a> </li>
+                    <li><a href="{% url 'logout' %}">Logout</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="outercontent">
+        <div class="innercontent">
+            
+            <div class="emergency-services">
+                <hr>
+                <h1>Emergency Services</h1>
+                <p>For hospital-related emergencies:</p>
+                <ul>
+                    <li><strong>Ambulance Services</strong>: Dial <strong>108</strong> for immediate ambulance assistance</li>
+                    <li><strong>Emergency Contact</strong>: Reach out to the specific hospital or medical facility for emergency care</li>
+                </ul>
+                <p>Additionally, some major cities in India may have dedicated emergency hospital contact numbers for immediate medical assistance.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ambulance-container">
+      <div class="ambulance"></div>
+    </div>
+</body>
+</html>

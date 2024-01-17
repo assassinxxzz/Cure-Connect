@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/review.css' %}">
+    <!-- Add any necessary CSS links or stylesheets -->
+</head>
+<body>
+    <div class="outerheader">
+        
+        <div class="icon"> 
+            <span class="i"></span>
+            <h1>  CURE CONNECT</h1>
+        </div>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a class="active"  href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                    <li><a href="{% url 'feedback' %}">Feedback</a> </li>
+                    <li><a href="{% url 'logout' %}">Logout</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <h1 id="rev">Reviews</h1>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>
+            "We're immensely grateful for our customers' invaluable reviews, which continually inspire and motivate us. <br>
+            Your heartfelt feedback fuels our dedication to providing exceptional service and drives our continuous improvement. <br>
+            Each review is a testament to the trust you've placed in us, shaping our commitment to delivering the best experiences.<br>
+             Thank you for sharing your thoughts and experiences; they guide us towards exceeding expectations."
+        </h2>
+    </div> 
+    <hr>
+    <div class="arrow-container">
+        <button id="scrollLeft">◄</button>
+    <div class="review-container" id="reviewContainer">
+        <div class="review-card">
+            <div class="review-header">
+                <h3>Casey</h3>
+                <div class="star-ratings">★★★★☆</div>
+            </div>
+            <p class="review-content">
+                "I'm so impressed with the hospital website's layout and design. It's easy to navigate, and the content is well-organized"</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <h3>Avery</h3>
+                <div class="star-ratings">★★★★☆</div>
+            </div>
+            <p class="review-content">
+                "Bravo to the hospital website team! The layout is clean, and the information is presented in a way that's easy to understand"</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <h3>Harper</h3>
+                <div class="star-ratings">★★★★☆</div>
+            </div>
+            <p class="review-content">
+                "Browsing through the site is a pleasure, and I appreciate the wealth of resources available."</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <h3>Emily</h3>
+                <div class="star-ratings">★★★★☆</div>
+            </div>
+            <p class="review-content">
+                "Kudos to the hospital for maintaining such an excellent website! It's clear that they value their online presence"</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <h3>Morgan</h3>
+                <div class="star-ratings">★★★★☆</div>
+            </div>
+            <p class="review-content">
+                "Navigating through it is a breeze, and the design is both modern and soothing. It's evident that they prioritize user experience"</p>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <h3>Jordan</h3>
+                <div class="star-ratings">★★★★☆</div>
+            </div>
+            <p class="review-content">
+                "Thoroughly impressed with the hospital's website. It's clear that they value user experience, as the site is easy to navigate and packed with useful information"
+            </p>
+        </div>
+    </div>
+    <button id="scrollRight">►</button>
+        <!-- Repeat the review card structure for more reviews -->
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
